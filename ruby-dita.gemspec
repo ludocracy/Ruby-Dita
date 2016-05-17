@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
   # Don't add any logic to runtime dependencies, for example to install a specific gem
   # based on Ruby version.
   # Rubygems / Bundler do not support this and you will need to find another way around it.
-  spec.add_runtime_dependency "duxml", "~>0.7"
+  #spec.add_runtime_dependency "duxml", "~>0.7"
 end
