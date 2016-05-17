@@ -1,0 +1,2133 @@
+<o c="Duxml::GrammarClass">
+  <a a="@rules">
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">((\btitle\b,\btitlealts\b?,(\bshortdesc\b|\babstract\b)?,\bprolog\b?,\bbody\b?,\brelated-links\b?,\btopic\b*))</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#REQUIRED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">id</s>
+      <s a="@statement">ID</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">conref</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">props</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">platform</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">product</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">audience</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">otherprops</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">base</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">importance</s>
+      <s a="@statement">(obsolete|deprecated|optional|default|low|normal|high|recommended|required|urgent|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">rev</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">status</s>
+      <s a="@statement">(new|changed|deleted|unchanged|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">translate</s>
+      <s a="@statement">(yes|no|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">xml:lang</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">dir</s>
+      <s a="@statement">(ltr|rtl|lro|rlo|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">outputclass</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#FIXED</s>
+      <s a="@statement">\bxmlns\b:\bditaarch\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">xmlns:ditaarch</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">&quot;1.1&quot;</s>
+      <s a="@statement">\bditaarch\b:\bDITAArchVersion\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">ditaarch:DITAArchVersion</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">&quot;(topic</s>
+      <s a="@statement">\bdomains\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">domains</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">xtrc</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">topic</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">xtrf</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\bdata\b|\bsort-as\b|\bdata-about\b)*,\bli\b+</s>
+      <z a="@object"/>
+      <s a="@subject">ol</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\bdata\b|\bsort-as\b|\bdata-about\b)*,\bli\b+</s>
+      <z a="@object"/>
+      <s a="@subject">ul</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\b#PCDATA\b|\bph\b|\bcodeph\b|\bsynph\b|\bfilepath\b|\bmsgph\b|\buserinput\b|\bsystemoutput\b|\bb\b|\bu\b|\bi\b|\btt\b|\bsup\b|\bsub\b|\buicontrol\b|\bmenucascade\b|\bterm\b|\bxref\b|\bcite\b|\bq\b|\bboolean\b|\bstate\b|\bkeyword\b|\boption\b|\bparmname\b|\bapiname\b|\bcmdname\b|\bmsgnum\b|\bvarname\b|\bwintitle\b|\btm\b|\bp\b|\blq\b|\bnote\b|\bdl\b|\bparml\b|\bul\b|\bol\b|\bsl\b|\bpre\b|\bcodeblock\b|\bmsgblock\b|\bscreen\b|\blines\b|\bfig\b|\bsyntaxdiagram\b|\bimagemap\b|\bimage\b|\bobject\b|\bdraft-comment\b|\brequired-cleanup\b|\bfn\b|\bindextermref\b|\bindexterm\b|\bdata\b|\bdata-about\b|\bforeign\b|\bunknown\b)*</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcolname\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">colname</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bnamest\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">namest</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bnameend\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">nameend</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bmorerows\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">morerows</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcolsep\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">colsep</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\browsep\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">rowsep</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\balign\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">align</s>
+      <s a="@statement">(left|right|center|justify|char|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bchar\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">char</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcharoff\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">charoff</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bvalign\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">valign</s>
+      <s a="@statement">(top|middle|bottom|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">entry</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">\bEMPTY\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcolnum\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">colnum</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcolname\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcolwidth\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">colwidth</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcolsep\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\browsep\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\balign\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bchar\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcharoff\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">colspec</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\b#PCDATA\b|\bph\b|\bcodeph\b|\bsynph\b|\bfilepath\b|\bmsgph\b|\buserinput\b|\bsystemoutput\b|\bb\b|\bu\b|\bi\b|\btt\b|\bsup\b|\bsub\b|\buicontrol\b|\bmenucascade\b|\bterm\b|\bxref\b|\bxref-external\b|\bcite\b|\bq\b|\bboolean\b|\bstate\b|\bkeyword\b|\boption\b|\bparmname\b|\bapiname\b|\bcmdname\b|\bmsgnum\b|\bvarname\b|\bwintitle\b|\btm\b|\blq\b|\bnote\b|\bdl\b|\bparml\b|\bul\b|\bol\b|\bsl\b|\bpre\b|\bcodeblock\b|\bmsgblock\b|\bscreen\b|\blines\b|\bfig\b|\bsyntaxdiagram\b|\bimagemap\b|\bimage\b|\bobject\b|\btable\b|\bsimpletable\b|\bdraft-comment\b|\brequired-cleanup\b|\bfn\b|\bindextermref\b|\bindexterm\b|\bdata\b|\bdata-about\b|\bforeign\b|\bunknown\b|\bdataref\b)*</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">p</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\bentry\b+)</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\browsep\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bvalign\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">row</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\b#PCDATA\b|\bph\b|\bcodeph\b|\bsynph\b|\bfilepath\b|\bmsgph\b|\buserinput\b|\bsystemoutput\b|\bb\b|\bu\b|\bi\b|\btt\b|\bsup\b|\bsub\b|\buicontrol\b|\bmenucascade\b|\bterm\b|\bcite\b|\bq\b|\bboolean\b|\bstate\b|\bkeyword\b|\boption\b|\bparmname\b|\bapiname\b|\bcmdname\b|\bmsgnum\b|\bvarname\b|\bwintitle\b|\btm\b|\bimage\b|\bdraft-comment\b|\brequired-cleanup\b|\bfn\b|\bindextermref\b|\bindexterm\b|\bdata\b|\bdata-about\b|\bforeign\b|\bunknown\b)*</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">sli</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\b#PCDATA\b|\bph\b|\bcodeph\b|\bsynph\b|\bfilepath\b|\bmsgph\b|\buserinput\b|\bsystemoutput\b|\bb\b|\bu\b|\bi\b|\btt\b|\bsup\b|\bsub\b|\buicontrol\b|\bmenucascade\b|\bterm\b|\bq\b|\bboolean\b|\bstate\b|\bkeyword\b|\boption\b|\bparmname\b|\bapiname\b|\bcmdname\b|\bmsgnum\b|\bvarname\b|\bwintitle\b|\btm\b|\bimage\b|\bdata\b|\bdata-about\b|\bforeign\b|\bunknown\b|\bdesc\b)*</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bhref\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">href</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bkeyref\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">keyref</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btype\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">type</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bfeature\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">feature</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bformat\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">format</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bscope\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">scope</s>
+      <s a="@statement">(local|peer|external|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">xref</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\b#PCDATA\b|\bcodeph\b|\bsynph\b|\bfilepath\b|\bmsgph\b|\buserinput\b|\bsystemoutput\b|\bb\b|\bu\b|\bi\b|\btt\b|\bsup\b|\bsub\b|\buicontrol\b|\bmenucascade\b|\bterm\b|\bxref\b|\bcite\b|\bq\b|\bboolean\b|\bstate\b|\bkeyword\b|\boption\b|\bparmname\b|\bapiname\b|\bcmdname\b|\bmsgnum\b|\bvarname\b|\bwintitle\b|\btm\b|\bimage\b|\bdraft-comment\b|\brequired-cleanup\b|\bfn\b|\bindextermref\b|\bindexterm\b|\bdata\b|\bdata-about\b|\bforeign\b|\bunknown\b)*</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bfeature\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">ph</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\b#PCDATA\b|\bph\b|\bcodeph\b|\bsynph\b|\bfilepath\b|\bmsgph\b|\buserinput\b|\bsystemoutput\b|\bb\b|\bu\b|\bi\b|\btt\b|\bsup\b|\bsub\b|\buicontrol\b|\bmenucascade\b|\bactive-low\b|\bcompleted\b|\bday\b|\bmonth\b|\byear\b|\bchange-summary\b|\bterm\b|\bq\b|\bboolean\b|\bstate\b|\bkeyword\b|\boption\b|\bparmname\b|\bapiname\b|\bcmdname\b|\bmsgnum\b|\bvarname\b|\bwintitle\b|\btm\b|\bimage\b|\bdata\b|\bchangehistory\b|\bedited\b|\bperson\b|\bdata-about\b|\bforeign\b|\bunknown\b)*</s>
+      <z a="@object"/>
+      <s a="@subject">title</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">title</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">title</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">title</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">title</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">title</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">title</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">title</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">title</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\b#PCDATA\b|\bph\b|\bcodeph\b|\bsynph\b|\bfilepath\b|\bmsgph\b|\buserinput\b|\bsystemoutput\b|\bb\b|\bu\b|\bi\b|\btt\b|\bsup\b|\bsub\b|\buicontrol\b|\bmenucascade\b|\bterm\b|\bxref\b|\bcite\b|\bq\b|\bboolean\b|\bstate\b|\bkeyword\b|\boption\b|\bparmname\b|\bapiname\b|\bcmdname\b|\bmsgnum\b|\bvarname\b|\bwintitle\b|\btm\b|\bp\b|\blq\b|\bnote\b|\bdl\b|\bparml\b|\bul\b|\bol\b|\bsl\b|\bpre\b|\bcodeblock\b|\bmsgblock\b|\bscreen\b|\blines\b|\bfig\b|\bsyntaxdiagram\b|\bimagemap\b|\bimage\b|\bobject\b|\btable\b|\bsimpletable\b|\btitle\b|\bdraft-comment\b|\brequired-cleanup\b|\bfn\b|\bindextermref\b|\bindexterm\b|\bdata\b|\bdata-about\b|\bforeign\b|\bunknown\b)*</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bspectitle\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">spectitle</s>
+      <s a="@statement">CDATA</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">section</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">((\bcolspec\b*,\bthead\b?,\btbody\b))</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#REQUIRED</s>
+      <s a="@statement">\bcols\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">cols</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcolsep\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\browsep\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\balign\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">tgroup</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\brow\b+)</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bvalign\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">tbody</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(((\btitle\b?,\bdesc\b?)?,\btgroup\b+))</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bframe\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">frame</s>
+      <s a="@statement">(top|bottom|topbot|all|sides|none|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcolsep\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\browsep\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bpgwide\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">pgwide</s>
+      <s a="@statement">NMTOKEN</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\browheader\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">rowheader</s>
+      <s a="@statement">(firstcol|norowheader|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bscale\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">scale</s>
+      <s a="@statement">(50|60|70|80|90|100|110|120|140|160|180|200|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">table</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\brow\b+)</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bvalign\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">thead</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\bsli\b+)</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bcompact\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::ValueRuleClass">
+      <s a="@attr_name">compact</s>
+      <s a="@statement">(yes|no|-dita-use-conref-target)</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bspectitle\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">sl</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">((\bp\b|\blq\b|\bnote\b|\bdl\b|\bparml\b|\bul\b|\bol\b|\bsl\b|\bpre\b|\bcodeblock\b|\bmsgblock\b|\bscreen\b|\blines\b|\bfig\b|\bsyntaxdiagram\b|\bimagemap\b|\bimage\b|\bobject\b|\btable\b|\bsimpletable\b|\brequired-cleanup\b|\bdata\b|\bdata-about\b|\bforeign\b|\bunknown\b|\bsection\b|\bexample\b)*)</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">body</s>
+    </o>
+    <o c="Duxml::ChildrenRuleClass">
+      <s a="@statement">(\b#PCDATA\b|\bph\b|\bcodeph\b|\bsynph\b|\bfilepath\b|\bmsgph\b|\buserinput\b|\bsystemoutput\b|\bb\b|\bu\b|\bi\b|\btt\b|\bsup\b|\bsub\b|\buicontrol\b|\bmenucascade\b|\bterm\b|\bxref\b|\bcite\b|\bq\b|\bboolean\b|\bstate\b|\bkeyword\b|\boption\b|\bparmname\b|\bapiname\b|\bcmdname\b|\bmsgnum\b|\bvarname\b|\bwintitle\b|\btm\b|\bp\b|\blq\b|\bnote\b|\bdl\b|\bparml\b|\bul\b|\bol\b|\bsl\b|\bpre\b|\bcodeblock\b|\bmsgblock\b|\bscreen\b|\blines\b|\bfig\b|\bsyntaxdiagram\b|\bimagemap\b|\bimage\b|\bobject\b|\btable\b|\bsimpletable\b|\bitemgroup\b|\bdraft-comment\b|\brequired-cleanup\b|\bfn\b|\bindextermref\b|\bindexterm\b|\bdata\b|\bdata-about\b|\bforeign\b|\bunknown\b)*</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bid\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bconref\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bplatform\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bproduct\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\baudience\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\botherprops\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bbase\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bimportance\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\brev\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bstatus\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\btranslate\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxml\b:\blang\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bdir\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\boutputclass\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrc\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+    <o c="Duxml::AttrsRuleClass">
+      <s a="@requirement">#IMPLIED</s>
+      <s a="@statement">\bxtrf\b</s>
+      <z a="@object"/>
+      <s a="@subject">li</s>
+    </o>
+  </a>
+</o>
