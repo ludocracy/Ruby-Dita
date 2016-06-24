@@ -8,10 +8,9 @@ module Dita
   GRAMMAR_PATH = File.expand_path(File.dirname(__FILE__) + '/../xml/dita_grammar.xml')
   include Duxml
 
-  # @param path [String] path of Dita file. if does not exist, will create
+  # @param path_or_doc [String] path of Dita file or new Doc
   # @return [Doc] XML document
-  def load(path, opts={})
-    @doc = Doc.new.write_to path unless File.exists?(path)
-    super(path, GRAMMAR_PATH)
+  def load(path_or_doc)
+    super(path_or_doc, GRAMMAR_PATH)
   end
 end

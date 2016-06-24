@@ -1,4 +1,5 @@
 # coding: utf-8
+# Copyright (c) 2016 Freescale Semiconductor Inc.
 Gem::Specification.new do |spec|
   spec.name          = "ruby-dita"
   spec.version       = '0.1.0'

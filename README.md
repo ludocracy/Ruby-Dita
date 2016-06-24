@@ -1,3 +1,5 @@
+# Copyright (c) 2016 Freescale Semiconductor Inc.
+
 # ruby-dita
 Ruby gem that will allow ruby constructs to print dita elements.
 
@@ -11,9 +13,9 @@ backwards compatibility with earlier versions) in Ruby, and eventually
 in other languages.
 
 Although this may appear to be a Ruby project, Ruby-Dita primarily
-consists of the file xml/dita_grammar.xml, which is ready by a separate
+consists of the file xml/dita_grammar.xml, which is read by a separate
 gem Duxml (itself a wrapper for Ox). Please help by expanding that file
-with more dita schema rules. See the Duxml documentation on how.
+with more Dita schema rules. See the Duxml documentation on how.
 
 Features
  - Duxml's lazy-XML shortcuts
