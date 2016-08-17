@@ -7,9 +7,9 @@ module Dita
   GRAMMAR_PATH = File.expand_path(File.dirname(__FILE__) + '/../xml/dita_grammar.xml')
   include Duxml
 
-  # @param path_or_doc [String] path of Dita file or new Doc
+  # @param path [String] path of existing or new Dita file
   # @return [Doc] XML document
-  def load(path_or_doc)
-    super(path_or_doc, GRAMMAR_PATH)
+  def load(path)
+    super(path, GRAMMAR_PATH)
   end
 end
