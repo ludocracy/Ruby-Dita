@@ -16,7 +16,9 @@ class TopicTest < Test::Unit::TestCase
   end
 
   def test_topic
-    x = Dita.topic('ruby-dita', 'asdf')
-    assert_equal '<topic id="asdf"><title>ruby-dita</title></topic>', x.to_s
+    x = Dita.topic('ruby-dita', %w(some <p>content</p>))
+    assert_match /<topic id="topic[0-9]{8}"\/>/, x.sclone.to_s
+    assert_equal '<title>ruby-dita</title>', x.title.to_s
+    assert_equal '<body>some<p>content</p></body>', x.body.to_s
   end
 end

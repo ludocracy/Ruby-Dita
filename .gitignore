@@ -1,5 +1,3 @@
 # Copyright (c) 2016 Freescale Semiconductor Inc.
 
-.idea/
-.idea/workspace.xml
-.idea/Ruby-Dita.iml
+.idea/*

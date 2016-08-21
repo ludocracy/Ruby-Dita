@@ -25,7 +25,7 @@ class Ruby_DitaTest < Test::Unit::TestCase
     assert_equal 3, doc.history.events.size
     doc.history.strict?(false)
     doc.topic << Element.new('bogus')
-    assert_equal %(: <bogus> added to <topic>. violates Children Rule that <topic>'s children must match '((title,titlealts?,(shortdesc|abstract)?,prolog?,body?,related-links?,topic*))'.),
+    assert_equal %(: <bogus> added to <topic> at index 0. violates Children Rule that <topic>'s children must match '((title,titlealts?,(shortdesc|abstract)?,prolog?,body?,related-links?,topic*))'.),
                  doc.history.events.first.description[72..-1]
     doc.topic[:id] = 'asdf asdf'
     assert_equal %(: <topic> given new attribute 'id' with value 'asdf asdf'. violates Value Rule that @id's value must match 'ID'.),
