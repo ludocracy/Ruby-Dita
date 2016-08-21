@@ -32,51 +32,18 @@ class Ruby_DitaTest < Test::Unit::TestCase
         doc.history.events.first.description[72..-1]
   end
 
-  def test_create_map_file
+  def test_save
+    load 'test.dita'
+    save 'test.dita', doc
+    dita = File.read 'test.dita'
+    assert_equal %(<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">), dita
 
-  end
-
-  def test_create_topic_file
-
-  end
-
-  def test_create_topicref
-
-  end
-
-  def test_invalid_root_attr
-
-  end
-
-  def test_valid_child
-
-  end
-
-  def test_invalid_child
-
-  end
-
-  def test_valid_attr
-
-  end
-
-  def test_invalid_attr
-
-  end
-
-  def test_valid_text
-
-  end
-
-  def test_invalid_text
-
-  end
-
-  def test_complex_dox
-
+    save 'test.xml', Doc.new
+    xml = File.read 'test.xml'
+    assert_equal %(<?xml  version="1.0"?>\n), xml
   end
 
   def teardown
-    FileUtils.rm_f(%w(test.dita .test.dita.duxml))
+    FileUtils.rm_f(%w(test.dita test.xml .test.dita.duxml .test.xml.duxml))
   end
 end

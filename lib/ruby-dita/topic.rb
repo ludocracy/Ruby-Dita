@@ -11,5 +11,6 @@ module Dita
     t[:id] = "topic#{t.object_id.to_s}"
     t << Element.new('title', [title])
     t << Element.new('body', content) if content
+    t
   end
 end
