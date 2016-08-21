@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["peter.kong@nxp.com"]
   spec.summary       = %q{Ruby to DITA API}
   spec.description   = "Please read the README.md for the purpose of this file."
-  spec.homepage      = "https://github.com/ruby-dita/ruby-dita"
+  spec.homepage      = "https://github.com/ludocracy/ruby-dita"
   spec.license       = "MIT"
   spec.required_ruby_version     = '>= 1.9.3'
   spec.required_rubygems_version = '>= 1.8.11'

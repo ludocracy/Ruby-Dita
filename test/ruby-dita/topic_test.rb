@@ -1,9 +1,7 @@
 require_relative '../../lib/ruby-dita/topic'
 require 'test/unit'
-include Dita
 
 class TopicTest < Test::Unit::TestCase
-  include Topic
   # Called before every test method runs. Can be used
   # to set up fixture information.
   def setup
@@ -18,7 +16,7 @@ class TopicTest < Test::Unit::TestCase
   end
 
   def test_topic
-    x = topic('ruby-dita', 'asdf')
+    x = Dita.topic('ruby-dita', 'asdf')
     assert_equal '<topic id="asdf"><title>ruby-dita</title></topic>', x.to_s
   end
 end
