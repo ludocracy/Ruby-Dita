@@ -4,9 +4,6 @@ require_relative 'ruby-dita/topic'
 require_relative 'ruby-dita/table'
 
 module Dita
-  include Topic
-  include Table
-
   GRAMMAR_PATH = File.expand_path(File.dirname(__FILE__) + '/../xml/dita_grammar.xml')
   include Duxml
 
