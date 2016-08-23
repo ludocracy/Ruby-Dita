@@ -5,7 +5,7 @@ module Dita
   # @param column_info [Array, Hash] if Array of Strings, column headings; if Array of Elements, colspecs; if Hash, keys are strings for column headings; values are <colspec> elements
   # @param rows [Array] array of rows with which to populate table; can either be XML <row> elements or Strings representing values
   # @return [Element] valid Dita <table>
-  def self.table(column_info, rows=[])
+  def table(column_info, rows=[])
     t = Element.new('table')
     headings = []
     case column_info
@@ -34,7 +34,7 @@ module Dita
 
   # @param ary [Array] array of row entries or entry values
   # @return [Element] correctly formatted row
-  def self.row(ary)
+  def row(ary)
     return ary if ary.all? do |a| a.respond_to?(:name) and a.name == 'row' end
     Element.new('row') <<
         ary.collect do |entry|
