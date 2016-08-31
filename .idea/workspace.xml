@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="999c7828-0251-4401-9afc-a3324a569eb3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ruby-dita-0.3.2.gem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ruby-dita-0.4.0.gem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ruby-dita-0.4.1.gem" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Ruby-Dita.iml" afterPath="$PROJECT_DIR$/.idea/Ruby-Dita.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ruby-dita/topic.rb" afterPath="$PROJECT_DIR$/lib/ruby-dita/topic.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ruby-dita/table.rb" afterPath="$PROJECT_DIR$/lib/ruby-dita/table.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ruby-dita.gemspec" afterPath="$PROJECT_DIR$/ruby-dita.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ruby-dita/topic_test.rb" afterPath="$PROJECT_DIR$/test/ruby-dita/topic_test.rb" />
     </list>
     <ignored path="Ruby-Dita.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +21,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Ruby-Dita@Run_test__duxml_test___Ruby_Dita.coverage" NAME="Run test 'duxml_test': Ruby-Dita Coverage Results" MODIFIED="1471807454354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ruby-dita/duxml_ext" MODULE_NAME="Ruby-Dita" />
-    <SUITE FILE_PATH="coverage/Ruby-Dita@Run_test__table_test___Ruby_Dita.coverage" NAME="Run test 'table_test': Ruby-Dita Coverage Results" MODIFIED="1471793954128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ruby-dita" MODULE_NAME="Ruby-Dita" />
+    <SUITE FILE_PATH="coverage/Ruby-Dita@Run_test__table_test___Ruby_Dita.coverage" NAME="Run test 'table_test': Ruby-Dita Coverage Results" MODIFIED="1472681182284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ruby-dita" MODULE_NAME="Ruby-Dita" />
     <SUITE FILE_PATH="coverage/Ruby-Dita@Run_test__shortcuts_test___Ruby_Dita.coverage" NAME="Run test 'shortcuts_test': Ruby-Dita Coverage Results" MODIFIED="1471984059130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/ruby-dita" MODULE_NAME="Ruby-Dita" />
     <SUITE FILE_PATH="coverage/Ruby-Dita@irb.coverage" NAME="irb Coverage Results" MODIFIED="1471981929645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Ruby-Dita" />
     <SUITE FILE_PATH="coverage/Ruby-Dita@Run_test__ruby_dita_test___Ruby_Dita.coverage" NAME="Run test 'ruby-dita_test': Ruby-Dita Coverage Results" MODIFIED="1471984081462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Ruby-Dita" />
@@ -51,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/lib/ruby-dita/table.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -77,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="topic.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="topic.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/ruby-dita/topic.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2182285">
+            <state vertical-scroll-proportion="0.0">
               <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding />
             </state>
@@ -97,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ruby-dita.gemspec" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ruby-dita.gemspec" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ruby-dita.gemspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.08928572">
               <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
               <folding />
             </state>
@@ -134,11 +133,11 @@
         <option value="$PROJECT_DIR$/test/ruby-dita/duxml_ext/duxml_test.rb" />
         <option value="$PROJECT_DIR$/test/ruby-dita_test.rb" />
         <option value="$PROJECT_DIR$/lib/ruby-dita.rb" />
-        <option value="$PROJECT_DIR$/lib/ruby-dita/table.rb" />
         <option value="$PROJECT_DIR$/test/ruby-dita/table_test.rb" />
         <option value="$PROJECT_DIR$/lib/ruby-dita/topic.rb" />
-        <option value="$PROJECT_DIR$/ruby-dita.gemspec" />
         <option value="$PROJECT_DIR$/test/ruby-dita/topic_test.rb" />
+        <option value="$PROJECT_DIR$/lib/ruby-dita/table.rb" />
+        <option value="$PROJECT_DIR$/ruby-dita.gemspec" />
       </list>
     </option>
   </component>
@@ -148,9 +147,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="1612" />
-    <option name="height" value="912" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -177,6 +177,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,8 +263,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,7 +277,7 @@
       <recent name="C:\Users\b33791\RubymineProjects\Ruby-Dita\test\ruby-dita" />
     </key>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.Run test 'ruby-dita_test': Ruby-Dita">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.Run test 'table_test': Ruby-Dita">
     <configuration default="false" name="Run test 'shortcuts_test': Ruby-Dita" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
       <module name="Ruby-Dita" />
@@ -541,11 +541,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'ruby-dita_test': Ruby-Dita" />
-        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'shortcuts_test': Ruby-Dita" />
-        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'duxml_test': Ruby-Dita" />
+        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'table_test': Ruby-Dita" />
+        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'duxml_test': Ruby-Dita" />
+        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'ruby-dita_test': Ruby-Dita" />
         <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'topic_test': Ruby-Dita" />
-        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'table_test': Ruby-Dita" />
+        <item index="4" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'shortcuts_test': Ruby-Dita" />
       </list>
     </recent_temporary>
   </component>
@@ -563,9 +563,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_test__ruby-dita_test___Ruby-Dita - 2016.08.22 at 19h 02m 48s.xml">
-      <configuration name="Run test 'ruby-dita_test': Ruby-Dita" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="Run_test__ruby-dita_test___Ruby-Dita - 2016.08.23 at 15h 28m 02s.xml">
       <configuration name="Run test 'ruby-dita_test': Ruby-Dita" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
@@ -584,6 +581,9 @@
     <history-entry file="Run_test__shortcuts_test___Ruby-Dita - 2016.08.23 at 15h 27m 39s.xml">
       <configuration name="Run test 'shortcuts_test': Ruby-Dita" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="Run_test__table_test___Ruby-Dita - 2016.08.31 at 17h 06m 22s.xml">
+      <configuration name="Run test 'table_test': Ruby-Dita" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
     <history-entry file="Run_test__topic_test___Ruby-Dita - 2016.08.21 at 10h 39m 19s.xml">
       <configuration name="Run test 'topic_test': Ruby-Dita" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
@@ -595,17 +595,17 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1612" height="912" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17912371" sideWeight="0.49506173" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17866324" sideWeight="0.49506173" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961586" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292232" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41387856" sideWeight="0.48582473" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4130703" sideWeight="0.48582473" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13208763" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41387856" sideWeight="0.51417524" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4130703" sideWeight="0.51417524" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38402063" sideWeight="0.50771207" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1012,20 +1012,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ruby-dita/table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.7417127">
             <caret line="68" column="3" selection-start-line="68" selection-start-column="3" selection-end-line="68" selection-end-column="3" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1035,22 +1026,6 @@
       </provider>
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ruby-dita/table_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruby-dita.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ruby-dita/topic_test.rb">
@@ -1071,8 +1046,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ruby-dita/topic.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2182285">
+        <state vertical-scroll-proportion="0.0">
           <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ruby-dita/table_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ruby-dita/table.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruby-dita.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08928572">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
           <folding />
         </state>
       </provider>

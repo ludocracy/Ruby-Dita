@@ -2,7 +2,7 @@
 # Copyright (c) 2016 Freescale Semiconductor Inc.
 Gem::Specification.new do |spec|
   spec.name          = "ruby-dita"
-  spec.version       = '0.4.1'
+  spec.version       = '0.4.2'
   spec.authors       = ["Peter Kong"]
   spec.email         = ["peter.kong@nxp.com"]
   spec.summary       = %q{Ruby to DITA API}
