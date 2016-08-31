@@ -2,6 +2,22 @@ require 'duxml'
 
 module Dita
   include Duxml
+
+
+  # @param ary [Array] array of row entries or entry values
+  # @return [Element] correctly formatted row
+  def row(ary)
+    return ary if ary.all? do |a| a.respond_to?(:name) and a.name == 'row' end
+    Element.new('row') <<
+        ary.collect do |entry|
+          if entry.is_a?(Element) and entry.name == 'entry'
+            entry
+          else
+            Element.new('entry') << entry
+          end
+        end
+  end
+
   # @param column_info [Array, Hash] if Array of Strings, column headings; if Array of Elements, colspecs; if Hash, keys are strings for column headings; values are <colspec> elements
   # @param rows [Array] array of rows with which to populate table; can either be XML <row> elements or Strings representing values
   # @return [Element] valid Dita <table>
@@ -22,7 +38,7 @@ module Dita
     if headings.any?
       tgroup << Element.new('thead', [Element.new('row')])
       headings.each do |h|
-        tgroup.thead.row << Element.new('entry', [h])
+        tgroup.thead.nodes.first << Element.new('entry', [h])
       end
     end
 
@@ -30,19 +46,5 @@ module Dita
     tgroup << Element.new('tbody')
     tgroup.tbody << rows.collect do |r| row r end
     t << tgroup
-  end
-
-  # @param ary [Array] array of row entries or entry values
-  # @return [Element] correctly formatted row
-  def row(ary)
-    return ary if ary.all? do |a| a.respond_to?(:name) and a.name == 'row' end
-    Element.new('row') <<
-        ary.collect do |entry|
-          if entry.is_a?(Element) and entry.name == 'entry'
-            entry
-          else
-            Element.new('entry') << entry
-          end
-        end
   end
 end # end of module Table
