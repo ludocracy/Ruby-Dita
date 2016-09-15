@@ -5,10 +5,11 @@ module Dita
 
 
   # @param ary [Array] array of row entries or entry values
+  # @param attrs [Hash] optional attributes for row
   # @return [Element] correctly formatted row
-  def row(ary)
+  def row(ary, attrs={})
     return ary if ary.all? do |a| a.respond_to?(:name) and a.name == 'row' end
-    Element.new('row') <<
+    Element.new('row', attrs) <<
         ary.collect do |e|
           if e.is_a?(Element) and e.name == 'entry'
             e
@@ -20,9 +21,10 @@ module Dita
 
   # @param column_info [Array, Hash] if Array of Strings, column headings; if Array of Elements, colspecs; if Hash, keys are strings for column headings; values are <colspec> elements
   # @param rows [Array] array of rows with which to populate table; can either be XML <row> elements or Strings representing values
+  # @param attrs [Hash] attributes of table
   # @return [Element] valid Dita <table>
-  def table(column_info, rows=[])
-    t = Element.new('table')
+  def table(column_info, rows, attrs={})
+    t = Element.new('table', attrs)
     headings = []
     tgroup = Element.new('tgroup')
     num_cols = column_info.size.to_s
@@ -53,11 +55,15 @@ module Dita
     t << tgroup
   end
 
+  # @param attrs [Hash] attributes of a given column
+  # @return [Element] colspec element
   def colspec(attrs)
     Element.new('colspec', attrs)
   end
 
-  # @param content [String, Element] content of
+  # @param content [String, Element] content of entry
+  # @param attrs [Hash] attributes of entry
+  # @return [Element] entry element
   def entry(content, attrs={})
     Element.new('entry', attrs, [content])
   end
