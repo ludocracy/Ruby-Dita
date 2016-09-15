@@ -1,3 +1,5 @@
 # Copyright (c) 2016 Freescale Semiconductor Inc.
 
 .idea/**
+.idea/workspace.xml
+*.gem

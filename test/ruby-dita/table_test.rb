@@ -23,7 +23,13 @@ class TableTest < Test::Unit::TestCase
   end
 
   def test_colspec
+    c = colspec({align: 'center', colname: '0'})
+    assert_equal '<colspec align="center" colname="0"/>', c.to_s
+  end
 
+  def test_entry
+    e = entry('content', {namest: 0, nameend: 3})
+    assert_equal '<entry namest="0" nameend="3">content</entry>', e.to_s
   end
 
   def test_table

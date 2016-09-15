@@ -9,11 +9,11 @@ module Dita
   def row(ary)
     return ary if ary.all? do |a| a.respond_to?(:name) and a.name == 'row' end
     Element.new('row') <<
-        ary.collect do |entry|
-          if entry.is_a?(Element) and entry.name == 'entry'
-            entry
+        ary.collect do |e|
+          if e.is_a?(Element) and e.name == 'entry'
+            e
           else
-            Element.new('entry') << entry
+            entry e
           end
         end
   end
@@ -25,15 +25,20 @@ module Dita
     t = Element.new('table')
     headings = []
     tgroup = Element.new('tgroup')
+    num_cols = column_info.size.to_s
     case column_info
       when Array
         headings = column_info if column_info.first.is_a?(String)
-        tgroup << column_info if column_info.first.is_a?(Element)
+        colspecs = column_info if column_info.first.is_a?(Element) and column_info.first.name == 'colspec'
       when Hash
         headings = column_info.keys
-        tgroup << column_info.values
+        colspecs = column_info.values
       else
         # TODO raise error?
+    end
+    if colspecs
+      colspecs.each_with_index do |c, index| c[:colname] = index.to_s end
+      tgroup << colspecs
     end
     if headings.any?
       tgroup << Element.new('thead', [Element.new('row')])
@@ -42,9 +47,19 @@ module Dita
       end
     end
 
-    tgroup[:cols] = column_info.size.to_s
+    tgroup[:cols] = num_cols
     tgroup << Element.new('tbody')
     tgroup.tbody << rows.collect do |r| row r end
     t << tgroup
   end
+
+  def colspec(attrs)
+    Element.new('colspec', attrs)
+  end
+
+  # @param content [String, Element] content of
+  def entry(content, attrs={})
+    Element.new('entry', attrs, [content])
+  end
 end # end of module Table
+
