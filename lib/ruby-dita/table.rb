@@ -24,17 +24,17 @@ module Dita
   def table(column_info, rows=[])
     t = Element.new('table')
     headings = []
+    tgroup = Element.new('tgroup')
     case column_info
       when Array
         headings = column_info if column_info.first.is_a?(String)
-        t << column_info if column_info.first.is_a?(Element)
+        tgroup << column_info if column_info.first.is_a?(Element)
       when Hash
         headings = column_info.keys
-        t << column_info.values
+        tgroup << column_info.values
       else
         # TODO raise error?
     end
-    tgroup = Element.new('tgroup')
     if headings.any?
       tgroup << Element.new('thead', [Element.new('row')])
       headings.each do |h|
